@@ -5,19 +5,20 @@
  #navbar {
   font-size: small;
   font-weight: bold;
+  font-family: sans-serif;
  }
 
-
  #navbar a:hover {
-    background-color: #ddd;
+    background-color: rgba(245, 201, 135, 0.178);
     color: black;
-    float: right;
+    border-radius: 10px;
   }
   
   #navbar a.active {
     background-color: #f5c76c;
     color: rgb(0, 0, 0);
-    font-size:small; 
+    display: inline-block;
+    border-radius: 10px;
   }
   
   
@@ -54,6 +55,8 @@
     transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   ul li:hover::after, ul li.active::after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
   ul li a {
